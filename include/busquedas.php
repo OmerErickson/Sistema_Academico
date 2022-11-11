@@ -16,7 +16,7 @@ function buscarSemestre($conexion){
     return mysqli_query($conexion, $sql);
 }
 function buscarCondicion($conexion){
-    $sql = "SELECT * FROM condicion";
+    $sql = "SELECT * FROM cond_laboral";
     return mysqli_query($conexion, $sql);
 }
 function buscarEstudianteByDni($conexion, $dni){
@@ -33,7 +33,7 @@ function buscarEstudiantes($conexion){
 }
 
 function buscarDocenteByDni($conexion, $dni){
-    $sql = "SELECT * FROM estudiante WHERE dni='$dni'";
+    $sql = "SELECT * FROM docente WHERE dni='$dni'";
     return mysqli_query($conexion, $sql);
 }
 function buscarDocenteById($conexion, $id){
@@ -41,9 +41,22 @@ function buscarDocenteById($conexion, $id){
     return mysqli_query($conexion, $sql);
 }
 function buscarDocente($conexion){
-    $sql = "SELECT * FROM estudiante";
+    $sql = "SELECT * FROM docente";
     return mysqli_query($conexion, $sql);
 }
+function buscarUsuarioDocenteById($conexion){
+    $sql = "SELECT * FROM usuarios_docentes WHERE id=$id";
+    return mysqli_query($conexion, $sql);
+}
+function buscarDatos_institucionales($conexion){
+    $sql = "SELECT * FROM datos_institucionales";
+    return mysqli_query($conexion, $sql);
+}
+function buscarModulo_Profesional($conexion){
+    $sql = "SELECT * FROM modulo_profesional";
+    return mysqli_query($conexion, $sql);
+}
+
 
 
 
