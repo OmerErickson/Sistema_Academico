@@ -1,9 +1,9 @@
 <?php
 include "../include/conexion.php";
 include "../include/busquedas.php";
-$descrip= $_POST['cargo'];
+$cargo= $_POST['descripcion'];
 
-$b_cargo = buscarGenero($conexion, $cargo);
+$b_cargo = buscarCargo($conexion, $cargo);
 $c_r_b_cargo = mysqli_num_rows($b_cargo);
 if ($c_r_b_cargo == 0) {
     $insertar = "INSERT INTO cargo (descripcion) VALUES ('$cargo')";
@@ -16,7 +16,7 @@ if ($c_r_b_cargo == 0) {
         
                 echo "<script>
                 alert('Registro de Cargo Exitoso');
-                window.location= '../cargos.php'
+                window.location= '../cargo.php'
                 </script>";
     }else {
         echo "<script>
