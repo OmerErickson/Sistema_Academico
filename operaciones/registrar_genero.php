@@ -15,12 +15,12 @@ if ($c_r_b_programa_estudios == 0) {
     if ($insertar) {
         
                 echo "<script>
-                alert('Registro de Cargo Exitoso');
+                alert('Registro de Genero Exitoso');
                 window.location= '../generos.php'
                 </script>";
     }else {
         echo "<script>
-            alert('Error al Registrar Cargo');
+            alert('Error al Registrar genero');
             window.history.back();
             </script>
             ";
