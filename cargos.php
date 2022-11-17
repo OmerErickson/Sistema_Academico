@@ -55,7 +55,7 @@ include "include/verificar_sesion.php";
                       <thead>
                         <tr>
                           <th>Id</th>
-                          <th>Cargo</th>
+                          <th>descripcion</th>
                           <th>Acciones</th>
                           
                         </tr>

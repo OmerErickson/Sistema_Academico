@@ -50,19 +50,10 @@ include "include/verificar_sesion.php";
 
                       
                     <div class="form-group">
-                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> Cargo :</label>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Cargo :
+                        </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="id_cargo" id="id_cargo" class="form-control col-md-7 col-xs-12">
-                          <option value="">Seleccione</option>
-                          <?php
-                          $buscar_cargo = buscarCargo($conexion);
-                          while ($res_b_cargo = mysqli_fetch_array($buscar_cargo)) {
-                          ?>
-                          <option value="<?php echo $res_b_cargo['id']; ?>"><?php echo $res_b_cargo['descripcion']; ?></option>
-                          <?php
-                          };
-                          ?>
-                        </select>
+                          <input type="text" name="cargo" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       
