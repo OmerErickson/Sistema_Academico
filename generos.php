@@ -41,7 +41,7 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Relacion de Estudiantes</h2>
+                    <h2>Relacion de Genero</h2>
                     <ul class="nav navbar-right">
                       <li>
                         <a href="genero.php" class="btn btn-success">Agregar Nuevo</a>

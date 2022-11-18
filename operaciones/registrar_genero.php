@@ -1,12 +1,13 @@
 <?php
 include "../include/conexion.php";
 include "../include/busquedas.php";
+
 $genero = $_POST['genero']
 
 $b_genero = buscarGenero($conexion, $genero);
 $c_r_b_genero = mysqli_num_rows($b_genero);
 if ($c_r_b_programa_estudios == 0) {
-    $insertar = "INSERT INTO genero (genero) VALUES ('$genero')";
+    $insertar = "INSERT INTO generos (genero) VALUES ('$genero')";
     $ejecutar_insetar = mysqli_query($conexion, $insertar);
 
     $b_id_genero = buscarGenero($conexion, $genero);
