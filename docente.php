@@ -55,7 +55,6 @@ include "include/verificar_sesion.php";
                           <input type="number" name="dni" maxlength="8" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apellidos y Nombres :
                         </label>
@@ -63,7 +62,8 @@ include "include/verificar_sesion.php";
                           <input type="text" name="apellidos_nombres" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-
+                    
+                      
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha de Nacimiento :
                         </label>
@@ -72,6 +72,8 @@ include "include/verificar_sesion.php";
                         </div>
                       </div>
 
+                      
+
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Dirección :
                         </label>
@@ -79,7 +81,6 @@ include "include/verificar_sesion.php";
                           <input type="text" name="direccion" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Correo :
                         </label>
@@ -87,12 +88,11 @@ include "include/verificar_sesion.php";
                           <input type="email" name="correo" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">NRO Celular :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="telefeno" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="number" name="telefono" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
@@ -112,35 +112,26 @@ include "include/verificar_sesion.php";
                         </select>
                         </div>
                       </div>
-                      
-                      
-                      
-                     
+                       
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nivel de Educacion :
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nivel_educación:
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="nivel_educacion" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" name="nivel_educacion" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
+                      
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Condición :
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Condición_Laboral:
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="cond_laboral" id="cond_laboral" class="form-control col-md-7 col-xs-12">
-                          <option value="">Seleccione</option>
-                          <?php
-                          $buscar_condicion = buscarCondicion($conexion);
-                          while ($res_b_condicion = mysqli_fetch_array($buscar_condicion)) {
-                          ?>
-                          <option value="<?php echo $res_b_condicion['id']; ?>"><?php echo $res_b_condicion['descripcion']; ?></option>
-                          <?php
-                          };
-                          ?>
-                        </select>
+                          <input type="text" name="cond_laboral" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
+                      
+                     
+                      
 
                       <div class="form-group">
                         <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> Cargo :</label>
@@ -158,11 +149,7 @@ include "include/verificar_sesion.php";
                         </select>
                         </div>
                       </div>
-
-                      
-                      
-                      
-                      
+                     
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
