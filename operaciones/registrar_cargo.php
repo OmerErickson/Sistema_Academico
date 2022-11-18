@@ -1,30 +1,35 @@
 <?php
 include "../include/conexion.php";
 include "../include/busquedas.php";
+
 $cargo= $_POST['descripcion'];
 
-$b_cargo = buscarCargo($conexion, $cargo);
-$c_r_b_cargo = mysqli_num_rows($b_cargo);
+$b_descripcion = buscarCargo($conexion, $cargo);
+$c_r_b_descripcion = mysqli_num_rows($b_descripcion);
 if ($c_r_b_cargo == 0) {
-    $insertar = "INSERT INTO cargo (descripcion) VALUES ('$cargo')";
-    $ejecutar_insetar = mysqli_query($conexion, $insertar);
+	$insertar = "INSERT INTO cargo (descripcion) VALUES ('$cargo')";
+	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 
-    $b_id_cargo = buscarCargo($conexion, $cargo);
-    $res_b_cargo = mysqli_fetch_array( $b_id_cargo);
+    $b_id_descripcion = buscarCargo($conexion, $cargo);
+	$res_b_descripcion = mysqli_fetch_array( $b_id_descripcion);
 
-    if ($insertar) {
-        
-                echo "<script>
-                alert('Registro de Cargo Exitoso');
+
+
+	
+	if ($insertar ) {
+		echo "<script>
+                alert('Registro Exitoso cargo');
                 window.location= '../cargo.php'
-                </script>";
-    }else {
-        echo "<script>
-            alert('Error al Registrar Cargo');
-            window.history.back();
-            </script>
-            ";
-    }
+    			</script>";
+	}else{
+		echo "<script>
+			alert('Error al cargo');
+			window.history.back();
+			</script>
+			";
+	}
+
 }
+
 
 ?>
