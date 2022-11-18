@@ -43,7 +43,7 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Relacion de Docentes</h2>
+                    <h2>Unidad Didactica</h2>
                     <ul class="nav navbar-right">
                       <li>
                         <a href="unidad_didactica.php" class="btn btn-success">Agregar Nuevo</a>
@@ -70,19 +70,19 @@ include "include/verificar_sesion.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_unidad_didacticas = buscarUnidadDidactica($conexion);
+                        $b_unidad_didacticas = buscarUnidadDidacticas($conexion);
                         while ($res_b_unidad_didacticas = mysqli_fetch_array($b_unidad_didacticas)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_unidad_didactica['id']; ?></td>
-                          <td><?php echo $res_b_unidad_didactica['descripcion']; ?></td>
-                          <td><?php echo $res_b_unidad_didactica['id_programa_estudio'];  ?></td>
-                          <td><?php echo $res_b_unidad_didactica['id_modulo']; ?></td>
-                          <td><?php echo $res_b_unidad_didactica['id_semestre']; ?></td>
-                          <td><?php echo $res_b_unidad_didactica['creditos']; ?></td>
-                          <td><?php echo $res_b_unidad_didactica['horas']; ?></td>
-                          <td><?php echo $res_b_unidad_didactica['tipo']; ?></td>
-                          <td><?php echo $res_b_unidad_didactica['orden']; ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['id']; ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['descripcion']; ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['id_programa_estudio'];  ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['id_modulo']; ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['id_semestre']; ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['creditos']; ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['horas']; ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['tipo']; ?></td>
+                          <td><?php echo $res_b_unidad_didacticas['orden']; ?></td>
                           <td>
                             <a href="editar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-primary">Editar</a>
                             <a href="operaciones/eliminar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-danger">Eliminar</a>
