@@ -70,19 +70,19 @@ include "include/verificar_sesion.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_unidad_didacticas = buscarUnidadDidacticas($conexion);
-                        while ($res_b_unidad_didacticas = mysqli_fetch_array($b_unidad_didacticas)) {
+                        $b_unidad_didactica = buscarUnidadDidactica($conexion);
+                        while ($res_b_unidad_didactica = mysqli_fetch_array($b_unidad_didactica)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_unidad_didacticas['id']; ?></td>
-                          <td><?php echo $res_b_unidad_didacticas['descripcion']; ?></td>
-                          <td><?php echo $res_b_unidad_didacticas['id_programa_estudio'];  ?></td>
-                          <td><?php echo $res_b_unidad_didacticas['id_modulo']; ?></td>
-                          <td><?php echo $res_b_unidad_didacticas['id_semestre']; ?></td>
-                          <td><?php echo $res_b_unidad_didacticas['creditos']; ?></td>
-                          <td><?php echo $res_b_unidad_didacticas['horas']; ?></td>
-                          <td><?php echo $res_b_unidad_didacticas['tipo']; ?></td>
-                          <td><?php echo $res_b_unidad_didacticas['orden']; ?></td>
+                          <td><?php echo $res_b_unidad_didactica['id']; ?></td>
+                          <td><?php echo $res_b_unidad_didactica['descripcion']; ?></td>
+                          <td><?php echo $res_b_unidad_didactica['id_programa_estudio'];  ?></td>
+                          <td><?php echo $res_b_unidad_didactica['id_modulo']; ?></td>
+                          <td><?php echo $res_b_unidad_didactica['id_semestre']; ?></td>
+                          <td><?php echo $res_b_unidad_didactica['creditos']; ?></td>
+                          <td><?php echo $res_b_unidad_didactica['horas']; ?></td>
+                          <td><?php echo $res_b_unidad_didactica['tipo']; ?></td>
+                          <td><?php echo $res_b_unidad_didactica['orden']; ?></td>
                           <td>
                             <a href="editar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-primary">Editar</a>
                             <a href="operaciones/eliminar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-danger">Eliminar</a>
