@@ -18,12 +18,12 @@ if ($c_r_b_cargo == 0) {
 	
 	if ($insertar ) {
 		echo "<script>
-                alert('Registro Exitoso cargo');
+                alert('Registro de Cargo Exitoso');
                 window.location= '../cargo.php'
     			</script>";
 	}else{
 		echo "<script>
-			alert('Error al cargo');
+			alert('Error al Registrar Cargo');
 			window.history.back();
 			</script>
 			";

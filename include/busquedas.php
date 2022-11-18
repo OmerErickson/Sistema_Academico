@@ -56,6 +56,11 @@ function buscarModulo_Profesional($conexion){
     $sql = "SELECT * FROM modulo_profesional";
     return mysqli_query($conexion, $sql);
 }
+function buscarUnidadDidactica($conexion){
+    $sql = "SELECT * FROM unidad_didactica";
+    return mysqli_query($conexion, $sql);
+}
+
 
 
 
