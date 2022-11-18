@@ -49,7 +49,7 @@ include "include/verificar_sesion.php";
                     <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_genero.php">
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Genero:
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">genero :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                           <input type="text" name="genero" required="required" class="form-control col-md-7 col-xs-12">
