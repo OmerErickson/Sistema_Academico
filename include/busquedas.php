@@ -11,6 +11,8 @@ function buscarProgramaEstudio($conexion){
     $sql = "SELECT * FROM programa_estudios";
     return mysqli_query($conexion, $sql);
 }
+
+
 function buscarSemestre($conexion){
     $sql = "SELECT * FROM semestre";
     return mysqli_query($conexion, $sql);
@@ -52,7 +54,7 @@ function buscarDatos_institucionales($conexion){
     $sql = "SELECT * FROM datos_institucionales";
     return mysqli_query($conexion, $sql);
 }
-function buscarModulo_Profesional($conexion){
+function buscarModuloProfesional($conexion){
     $sql = "SELECT * FROM modulo_profesional";
     return mysqli_query($conexion, $sql);
 }

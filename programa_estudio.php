@@ -1,5 +1,4 @@
 <?php
-
 include "include/conexion.php";
 include "include/busquedas.php";
 include "include/verificar_sesion.php";
@@ -41,112 +40,57 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Registro de Estudiante</h2>
+                    <h2>Registro de Programa de Estudios</h2>
                     
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_unidad_didactica.php">
+                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_programa_estudio.php">
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">descripcion :
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Codigo :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="descripcion" maxlength="8" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="number" name="codigo" maxlength="8" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Programa de Estudios :
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Tipo :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
-                          <option value="">Seleccione</option>
-                          <?php
-                          $buscar_pe = buscarProgramaEstudio($conexion);
-                          while ($res_b_pe = mysqli_fetch_array($buscar_pe)) {
-                          ?>
-                          <option value="<?php echo $res_b_pe['id']; ?>"><?php echo $res_b_pe['nombre']; ?></option>
-                          <?php
-                          };
-                          ?>
-                        </select>
+                          <input type="text" name="tipo" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-
+                    
+                      
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Modulo Profesional :
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombres :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="modulo_profesional" id="modulo_profesional" class="form-control col-md-7 col-xs-12">
-                          <option value="">Seleccione</option>
-                          <?php
-                          $buscar_mp = buscarModuloProfesional($conexion);
-                          while ($res_b_mp = mysqli_fetch_array($buscar_mp)) {
-                          ?>
-                          <option value="<?php echo $res_b_mp['id']; ?>"><?php echo $res_b_mp['descripcion']; ?></option>
-                          <?php
-                          };
-                          ?>
-                        </select>
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Semestre:
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="semestre" id="semestre" class="form-control col-md-7 col-xs-12">
-                          <option value="">Seleccione</option>
-                          <?php
-                          $buscar_sem = buscarSemestre($conexion);
-                          while ($res_b_sem = mysqli_fetch_array($buscar_sem)) {
-                          ?>
-                          <option value="<?php echo $res_b_sem['id']; ?>"><?php echo $res_b_sem['descripcion']; ?></option>
-                          <?php
-                          };
-                          ?>
-                        </select>
-                        </div>
-                      </div>
-
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Creditos :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="creditos" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Horas :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="horas" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tipo:
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="tipo" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Orden :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="orden" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" name="nombre" class="date-picker form-control col-md-7 col-xs-12" required="required" >
                         </div>
                       </div>
 
                       
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Resolucion :
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="resolucion" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
                       
                       
+
+                      
+                       
+                      
+
+                      
+                      
+                     
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
