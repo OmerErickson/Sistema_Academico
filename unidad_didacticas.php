@@ -1,4 +1,5 @@
-?php
+<?php
+
 include "include/conexion.php";
 include "include/busquedas.php";
 include "include/verificar_sesion.php";
@@ -46,7 +47,7 @@ include "include/verificar_sesion.php";
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_estudiante.php">
+                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_unidad_didactica.php">
 
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">DNI :
