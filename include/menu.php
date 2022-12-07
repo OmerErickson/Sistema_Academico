@@ -35,7 +35,7 @@
                     <ul class="nav child_menu">
                       <li><a href="dato_institucional.php">Datos Institucionales</a></li>
                       <li><a href="periodo_academico.php">Periodo Académico</a></li>
-                      <li><a href="presente_per_acad.php">Presente Periodo Académico</a></li>
+                      <li><a href="presente_periodo_academico.php">Presente Periodo Académico</a></li>
                       <li><a href="programa_estudios.php">Programa de Estudios</a></li>
                       <li><a href="modulo_formativo.php">Modulos formativos</a></li>
                       <li><a href="semestre.php">Semestre</a></li>
