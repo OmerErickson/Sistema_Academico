@@ -55,7 +55,9 @@ include "include/verificar_sesion.php";
                       <thead>
                         <tr>
                           <th>Id</th>
-                          <th>id_periodo_acad</th>
+                          <th>descripcion</th>
+                          <th>nro_modulo</th>
+                          <th>id_programa_estudio</th>                    
                           <th>Acciones</th>
                           
                         </tr>
@@ -63,16 +65,19 @@ include "include/verificar_sesion.php";
                       <tbody>
 
                         <?php 
-                        $b_presente_periodo_academico = buscarPresentePeriodoAcademico($conexion);
-                        while ($res_b_presente_periodo_academico = mysqli_fetch_array($b_presente_periodo_academico)) {
+                        $b_modulo_profesional = buscarModuloProfesional($conexion);
+                        while ($res_b_modulo_profesional = mysqli_fetch_array($b_modulo_profesional)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_genero['id']; ?></td>
-                          <td><?php echo $res_b_genero['id_periodo_acad']; ?></td>
+                          <td><?php echo $res_b_modulo_profesional['id']; ?></td>
+                          <td><?php echo $res_b_modulo_profesional['id_periodo_acad']; 
+                          ?></td>
+                          <td><?php echo $res_b_modulo_profesional['nro_modulo']; ?></td>
+                          <td><?php echo $res_b_modulo_profesional['id_programa_estudio']; ?></td>
                          
                           <td>
-                            <a href="editar_genero.php?id=<?php echo $res_b_genero['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_genero.php?id=<?php echo $res_b_genero['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="editar_estudiante.php?id=<?php echo $res_b_modulo_profesional['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_modulo_profesional['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php

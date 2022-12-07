@@ -37,7 +37,7 @@
                       <li><a href="periodo_academico.php">Periodo Académico</a></li>
                       <li><a href="presente_periodo_academico.php">Presente Periodo Académico</a></li>
                       <li><a href="programa_estudios.php">Programa de Estudios</a></li>
-                      <li><a href="modulo_formativo.php">Modulos formativos</a></li>
+                      <li><a href="modulo_profesional.php">Modulos formativos</a></li>
                       <li><a href="semestre.php">Semestre</a></li>
                       <li><a href="unidad_didactica.php">Unidades didacticas</a></li>
                       <li><a href="cargo.php">Cargo</a></li>
