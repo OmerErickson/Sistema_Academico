@@ -16,7 +16,7 @@
               </div>
               <div class="profile_info">
                 <span>HOLA,</span>
-                <h2>Taboada Escobar Omer</h2>
+                <h2>Taboada Escobar Omer Erickson</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
