@@ -59,7 +59,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apellidos y Nombres :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="nom_ap" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" name="apellidos_nombre" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
@@ -97,14 +97,14 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Correo :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="email" name="correo" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">NRO Celular :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="cel" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="number" name="telefono" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
@@ -131,11 +131,12 @@ include "include/verificar_sesion.php";
                         </select>
                         </div>
                       </div>
+
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Semestre:
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="semestre" id="semestre" class="form-control col-md-7 col-xs-12">
+                        <select name="id_semestre" id="semestre" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_sem = buscarSemestre($conexion);
@@ -148,6 +149,8 @@ include "include/verificar_sesion.php";
                         </select>
                         </div>
                       </div>
+
+
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Seccion :
                         </label>
@@ -155,6 +158,8 @@ include "include/verificar_sesion.php";
                           <input type="text" name="seccion" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
+
+
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Turno :
                         </label>
@@ -162,11 +167,12 @@ include "include/verificar_sesion.php";
                           <input type="text" name="turno" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
+
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Condición :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="condicion" id="condicion" class="form-control col-md-7 col-xs-12">
+                        <select name="id_condicion" id="condicion" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_condicion = buscarCondicion($conexion);
@@ -179,6 +185,7 @@ include "include/verificar_sesion.php";
                         </select>
                         </div>
                       </div>
+                      
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Discapacidad :
                         </label>
@@ -190,6 +197,7 @@ include "include/verificar_sesion.php";
                           </select>
                         </div>
                       </div>
+
                       <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
