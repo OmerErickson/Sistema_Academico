@@ -1,6 +1,7 @@
 <?php
 include "../include/conexion.php";
 include "../include/busquedas.php";
+
 $dni = $_POST['dni'];
 $apellidos_nombres = $_POST['apellidos_nombres'];
 $id_genero = $_POST['id_genero'];
@@ -18,10 +19,12 @@ $discapacidad = $_POST['discapacidad'];
 
 $b_estudiante = buscarEstudianteByDni($conexion, $dni);
 $c_r_b_estudiante = mysqli_num_rows($b_estudiante);
+
 if ($c_r_b_estudiante == 0) {//validamos que no haya registros en la base de datos
 	$insertar = "INSERT INTO estudiante (dni, apellidos_nombres, id_genero, fecha_nac, direccion, correo, telefono, anio_ingreso, id_programa_estudios, id_semestre, seccion, turno, id_condicion, discapacidad) VALUES ('$dni','$apellidos_nombres','$id_genero', '$fecha_nac', '$direccion', '$correo', '$telefono', '$anio_ingreso', '$id_programa_estudios', '$id_semestre', '$seccion', '$turno', '$id_condicion', '$discapacidad')";
+
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
-	// registrar usuario
+	// registrar usu
 	$b_id_estudiante = buscarEstudianteByDni($conexion, $dni);
 	$res_b_estudiante = mysqli_fetch_array($b_id_estudiante);
 	$id_estudiante = $res_b_estudiante['id'];
