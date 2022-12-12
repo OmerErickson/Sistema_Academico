@@ -33,7 +33,7 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Datos Institucionales <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="dato_institucional.php">Datos Institucionales</a></li>
+                      <li><a href="datos_institucionales.php">Datos Institucionales</a></li>
                       <li><a href="periodo_academico.php">Periodo Académico</a></li>
                       <li><a href="presente_periodo_academico.php">Presente Periodo Académico</a></li>
                       <li><a href="programa_estudios.php">Programa de Estudios</a></li>
