@@ -67,9 +67,9 @@ include "include/verificar_sesion.php";
                         while ($res_b_condicion = mysqli_fetch_array($b_condicion)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_cargo['id']; ?></td>
-                          <td><?php echo $res_b_cargo['descripcion']; ?></td>
-                          <td><?php echo $res_b_cargo['codigo']; ?></td>
+                          <td><?php echo $res_b_condicion['id']; ?></td>
+                          <td><?php echo $res_b_condicion['descripcion']; ?></td>
+                          <td><?php echo $res_b_condicion['codigo']; ?></td>
                           <td>
                             <a href="editar_docente.php?id=<?php echo $res_b_cargo['id']; ?>" class="btn btn-primary">Editar</a>
                             <a href="operaciones/eliminar_cargo.php?id=<?php echo $res_b_cargo['descripcion']; ?>" class="btn btn-danger">Eliminar</a>
