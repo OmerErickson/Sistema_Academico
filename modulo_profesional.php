@@ -70,7 +70,7 @@ include "include/verificar_sesion.php";
                         ?>
                         <tr>
                           <td><?php echo $res_b_modulo_profesional['id']; ?></td>
-                          <td><?php echo $res_b_modulo_profesional['id_periodo_acad']; 
+                          <td><?php echo $res_b_modulo_profesional['descripcion']; 
                           ?></td>
                           <td><?php echo $res_b_modulo_profesional['nro_modulo']; ?></td>
                           <td><?php echo $res_b_modulo_profesional['id_programa_estudio']; ?></td>
