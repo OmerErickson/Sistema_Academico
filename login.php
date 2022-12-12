@@ -30,6 +30,9 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
+          <center>
+              <img src="imagenes/logo.png" alt="logo_instituto"  width="150px"/>
+            </center>
             <form method="POST" action="operaciones/iniciar_sesion.php">
               <h1>Inicio de Sesión</h1>
               <div>
