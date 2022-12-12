@@ -18,7 +18,7 @@ function buscarSemestre($conexion){
     return mysqli_query($conexion, $sql);
 }
 function buscarCondicion($conexion){
-    $sql = "SELECT * FROM cond_laboral";
+    $sql = "SELECT * FROM condicion";
     return mysqli_query($conexion, $sql);
 }
 function buscarEstudianteByDni($conexion, $dni){
