@@ -98,7 +98,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="Gentella/production/images/img.jpg" alt=""><?php echo $res_b_u_s['apellidos_nombres']; ?>
+                    <img src="imagenes/foto.jpg" alt=""><?php echo $res_b_u_s['apellidos_nombres']; ?>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -122,7 +122,7 @@
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                     <li>
                       <a>
-                        <span class="image"><img src="imagenes/foto.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="imagenes/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -134,7 +134,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="imagenes/foto.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -146,7 +146,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="imagenes/foto.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="Gentella/production/images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -158,7 +158,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="imagenes/foto.jpg" alt="Profile Image" /></span>
+                        <span class="image"><img src="Gentella/production/images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
