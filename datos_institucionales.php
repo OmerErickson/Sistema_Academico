@@ -81,17 +81,12 @@ include "include/busquedas.php";
                           <td><?php echo $res_b_dato_institucional['nombre_institucion']; ?></td>
                           <td><?php echo $res_b_dato_institucional['departamento']; ?></td>
                           <td><?php echo $res_b_dato_institucional['provincia']; ?></td>
-                          <td>
-                          <td><?php echo $res_b_dato_institucional['distrito']; ?></td>
-                          <td>
-                          <td><?php echo $res_b_dato_institucional['direccion']; ?></td>
-                          <td>
-                          <td><?php echo $res_b_dato_institucional['telefono']; ?></td>
-                          <td>
-                          <td><?php echo $res_b_dato_institucional['correo']; ?></td>
-                          <td>
+                          <td><?php echo $res_b_dato_institucional['distrito']; ?></td>                        
+                          <td><?php echo $res_b_dato_institucional['direccion']; ?></td>                         
+                          <td><?php echo $res_b_dato_institucional['telefono']; ?></td>                        
+                          <td><?php echo $res_b_dato_institucional['correo']; ?></td>                         
                           <td><?php echo $res_b_dato_institucional['nro_resolucion']; ?></td>
-                          <td>
+                          
 
                             <a href="editar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-primary">Editar</a>
                             <a href="operaciones/eliminar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-danger">Eliminar</a>
