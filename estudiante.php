@@ -59,7 +59,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apellidos y Nombres :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="apellidos_nombre" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" name="apellidos_nombres" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="form-group">
@@ -118,7 +118,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Programa de Estudios :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
+                        <select name="id_programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_pe = buscarProgramaEstudio($conexion);
@@ -172,7 +172,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Condición :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="condicion" id="condicion" class="form-control col-md-7 col-xs-12">
+                        <select name="id_condicion" id="condicion" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_condicion = buscarCondicion($conexion);
