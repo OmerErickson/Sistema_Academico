@@ -63,7 +63,7 @@ include "include/verificar_sesion.php";
                       <tbody>
                         <?php 
                         $b_cargo = buscarCargo($conexion);
-                        while ($res_b_cargo = mysqli_fetch_array($b_ecargo)) {
+                        while ($res_b_cargo = mysqli_fetch_array($b_cargo)) {
                         ?>
                         <tr>
                           <td><?php echo $res_b_cargo['id']; ?></td>
