@@ -41,7 +41,7 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Registro de Estudiante</h2>
+                    <h2>Registro de Unidad Didactica</h2>
                     
                     <div class="clearfix"></div>
                   </div>
@@ -61,7 +61,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Programa de Estudios :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
+                        <select name="id_programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_pe = buscarProgramaEstudio($conexion);
@@ -79,7 +79,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Modulo Profesional :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="modulo_profesional" id="modulo_profesional" class="form-control col-md-7 col-xs-12">
+                        <select name="id_modulo_profesional" id="modulo_profesional" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_mp = buscarModuloProfesional($conexion);
@@ -97,7 +97,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Semestre:
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="semestre" id="semestre" class="form-control col-md-7 col-xs-12">
+                        <select name="id_semestre" id="semestre" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_sem = buscarSemestre($conexion);
