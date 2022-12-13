@@ -46,88 +46,44 @@ include "include/verificar_sesion.php";
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_datos_institucional.php">
+                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_modulo_profesional.php">
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Codigo Modular :
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Descripcion :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="cod_modular" maxlength="20" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" name="descripcion"  required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ruc :
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nro modulo :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="ruc" maxlength="20" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="number" name="nro_modulo"  required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nombre del Institucion :
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Programa de Estudios :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="nombre_institucion" required="required" class="form-control col-md-7 col-xs-12">
+                        <select name="id_programa_estudio" id="programa_estudio" class="form-control col-md-7 col-xs-12">
+                          <option value="">Seleccione</option>
+                          <?php
+                          $buscar_pe = buscarProgramaEstudio($conexion);
+                          while ($res_b_pe = mysqli_fetch_array($buscar_pe)) {
+                          ?>
+                          <option value="<?php echo $res_b_pe['id']; ?>"><?php echo $res_b_pe['nombre']; ?></option>
+                          <?php
+                          };
+                          ?>
+                        </select>
                         </div>
                       </div>
 
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Departamento :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="departamento" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
+                                         
 
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Provincia :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="provincia" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Distrito :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="distrito" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Dirección :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="direccion" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Telefono :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="telefono" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Correo :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="email" name="correo" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
-
-                      
-                      <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Numero de Resolucion :
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="nro_resolucion" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
-                        </div>
-                      </div>
                       
                       
                       
