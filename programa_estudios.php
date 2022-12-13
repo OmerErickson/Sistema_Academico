@@ -65,15 +65,15 @@ include "include/busquedas.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_programa_estudio = buscarProgramaEstudio($conexion);
-                        while ($res_b_programa_estudio = mysqli_fetch_array($b_programa_estudio)) {
+                        $b_programa_estudios = buscarProgramaEstudio($conexion);
+                        while ($res_b_programa_estudios = mysqli_fetch_array($b_programa_estudios)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_programa_estudio['id']; ?></td>
-                          <td><?php echo $res_b_programa_estudio['codigo']; ?></td>
-                          <td><?php echo $res_b_programa_estudio['tipo'];  ?></td>
-                          <td><?php echo $res_b_programa_estudio['nombre']; ?></td>
-                          <td><?php echo $res_b_programa_estudio['resolucion']; ?></td>
+                          <td><?php echo $res_b_programa_estudios['id']; ?></td>
+                          <td><?php echo $res_b_programa_estudios['codigo']; ?></td>
+                          <td><?php echo $res_b_programa_estudios['tipo'];  ?></td>
+                          <td><?php echo $res_b_programa_estudios['nombre']; ?></td>
+                          <td><?php echo $res_b_programa_estudios['resolucion']; ?></td>
                           
                           <td>
                             <a href="editar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-primary">Editar</a>
