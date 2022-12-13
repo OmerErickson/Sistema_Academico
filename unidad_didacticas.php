@@ -53,7 +53,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">descripcion :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="number" name="descripcion" maxlength="8" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="text" name="descripcion" maxlength="8" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
@@ -116,7 +116,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Creditos :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="creditos" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="number" name="creditos" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
@@ -140,7 +140,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Orden :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <input type="text" name="orden" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
+                          <input type="number" name="orden" maxlength="9" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
 
