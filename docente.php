@@ -99,7 +99,7 @@ include "include/verificar_sesion.php";
                       <div class="form-group">
                         <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Genero :</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="id_genero" id="id_genero" class="form-control col-md-7 col-xs-12">
+                        <select name="id_genero" id="genero" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_genero = buscarGenero($conexion);
@@ -136,7 +136,7 @@ include "include/verificar_sesion.php";
                       <div class="form-group">
                         <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> Cargo :</label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <select name="id_cargo" id="id_cargo" class="form-control col-md-7 col-xs-12">
+                        <select name="id_cargo" id="cargo" class="form-control col-md-7 col-xs-12">
                           <option value="">Seleccione</option>
                           <?php
                           $buscar_cargo = buscarCargo($conexion);
