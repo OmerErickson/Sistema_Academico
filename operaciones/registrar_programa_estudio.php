@@ -25,6 +25,7 @@ if ($c_r_b_programa_estudios == 0) {
 			</script>
 			";
 	}
+}
 
 
 ?>
