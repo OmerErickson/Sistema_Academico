@@ -30,6 +30,7 @@ if ($c_r_b_unidad_didactica == 0) {
 			</script>
 			";
 	}
+}
 
 
 ?>
