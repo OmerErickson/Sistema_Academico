@@ -18,12 +18,12 @@ if ($c_r_b_id_periodo_acad == 0) {
 	
 	if ($insertar ) {
 		echo "<script>
-                alert('Registro de Cargo Exitoso');
-                window.location= '../cargo.php'
+                alert('Registro de periodo academico Exitoso');
+                window.location= '../presente_periodo_academico.php'
     			</script>";
 	}else{
 		echo "<script>
-			alert('Error al Registrar Cargo');
+			alert('Error al Registrar periodo academico');
 			window.history.back();
 			</script>
 			";
