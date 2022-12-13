@@ -10,7 +10,7 @@ $resolucion = $_POST['resolucion'];
 $b_programa_estudios = buscarProgramaEstudio($conexion, $codigo);
 $c_r_b_programa_estudios = mysqli_num_rows($b_programa_estudios);
 if ($c_r_b_programa_estudios == 0) {
-	$insertar = "INSERT INTO programa_estudio (codigo, tipo, nombre, resolucion) VALUES ('$codigo','$tipo','$nombre', '$resolucion')";
+	$insertar = "INSERT INTO programa_estudios (codigo, tipo, nombre, resolucion) VALUES ('$codigo','$tipo','$nombre', '$resolucion')";
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 	
 	if ($ejecutar_insetar) {
