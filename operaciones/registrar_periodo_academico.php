@@ -16,7 +16,7 @@ if ($c_r_b_nombre == 0) {
 	$insertar = "INSERT INTO periodo_academico (nombre, fecha_inicio, fecha_fin, director, fecha_actas) VALUES ('$nombre', '$fecha_inicio', '$fecha_fin', '$director', '$fecha_actas')";
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 
-    $b_id_nombre = buscarPeriodoAcademicoByNombre($conexion, $b_nombre);
+    $b_id_nombre = buscarPeriodoAcademico($conexion, $b_nombre);
 	$res_b_nombre = mysqli_fetch_array( $b_id_nombre);
 
 
