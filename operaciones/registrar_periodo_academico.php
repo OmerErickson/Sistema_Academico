@@ -19,10 +19,6 @@ if ($c_r_b_nombre == 0) {
 	
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 	
-    $b_id_nombre = buscarPeriodoAcademicoByNombre($conexion, $nombre);
-	$res_b_nombre = mysqli_fetch_array($b_id_nombre);
-	
-	
 	if ($ejecutar_insetar) {
 		echo "<script>
                 alert('Registro Exitoso periodo academico');

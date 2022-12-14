@@ -75,7 +75,7 @@ function buscarPeriodoAcademico($conexion){
     return mysqli_query($conexion, $sql);
 }
 function buscarPeriodoAcademicoByNombre($conexion, $nombre){
-    $sql = "SELECT * FROM periodo_academico WHERE nombre=$nombre";
+    $sql = "SELECT * FROM periodo_academico WHERE nombre='$nombre'";
     return mysqli_query($conexion, $sql);
 }
 
