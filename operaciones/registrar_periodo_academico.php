@@ -22,7 +22,7 @@ if ($c_r_b_nombre == 0) {
 	if ($ejecutar_insetar) {
 		echo "<script>
                 alert('Registro Exitoso periodo academico');
-                window.location= '../periodo_academico.php'
+                window.location= '../periodo_academicos.php'
     			</script>";
 	}else{
 		echo "<script>
