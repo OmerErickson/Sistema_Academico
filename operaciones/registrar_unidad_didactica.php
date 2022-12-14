@@ -4,7 +4,7 @@ include "../include/busquedas.php";
 
 $descripcion     = $_POST['descripcion'];
 $id_programa_estudio       = $_POST['id_programa_estudio'];
-$id_modulo     = $_POST['id_modulo'];
+$id_modulo     = $_POST['id_modulo_profesional'];
 $id_semestre = $_POST['id_semestre'];
 $creditos = $_POST['creditos'];
 $horas = $_POST['horas'];
