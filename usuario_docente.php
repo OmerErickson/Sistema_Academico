@@ -47,7 +47,7 @@ include "include/verificar_sesion.php";
                   </div>
                   <div class="x_content">
                     <br />
-                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_semestre.php">
+                    <form class="form-horizontal form-label-left" method="POST" action="operaciones/registrar_usuario_docente.php">
 
                       <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Id Docente :
