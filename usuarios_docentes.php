@@ -63,7 +63,7 @@ include "include/busquedas.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_docentes = buscarDocentes($conexion);
+                        $b_docentes = buscarUsuarioDocenteById($conexion);
                         while ($res_b_docentes = mysqli_fetch_array($b_docentes)) {
                         ?>
                         <tr>
