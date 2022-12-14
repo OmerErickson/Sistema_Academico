@@ -10,7 +10,7 @@ $fecha_actas= $_POST['fecha_actas'];
 
 $b_nombre = buscarPeriodoAcademicoByNombre($conexion, $nombre);
 $c_r_b_nombre= mysqli_num_rows($b_nombre);
-
+echo "hola";
 if ($c_r_b_nombre == 0) {
 	
 	$insertar = "INSERT INTO periodo_academico(nombre, fecha_inicio, fecha_fin, director, fecha_actas) VALUES ('$nombre','$fecha_inicio','$fecha_fin','$director','$fecha_actas')";
