@@ -45,7 +45,7 @@ include "include/busquedas.php";
                     <h2>Relacion de Docentes</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="docente.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="usuario_docente.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -55,7 +55,7 @@ include "include/busquedas.php";
                     <table id="example" class="table table-striped table-bordered">
                       <thead>
                         <tr>
-                          <th>Id</th>
+                          <th>id_docente</th>
                           <th>usuario</th>
                           <th>password</th>
                           <th>Acciones</th>
@@ -63,11 +63,11 @@ include "include/busquedas.php";
                       </thead>
                       <tbody>
                         <?php 
-                        $b_docentes = buscarUsuarioDocenteById($conexion);
+                        $b_docentes = buscarUsuarioDocente($conexion);
                         while ($res_b_docentes = mysqli_fetch_array($b_docentes)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_docentes['id']; ?></td>
+                          <td><?php echo $res_b_docentes['id_docente']; ?></td>
                           <td><?php echo $res_b_docentes['usuario']; ?></td>
                           <td><?php echo $res_b_docentes['password'];  ?></td>
                           
