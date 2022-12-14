@@ -7,10 +7,11 @@ $nro_modulo       = $_POST['nro_modulo'];
 $id_programa_estudio     = $_POST['id_programa_estudio'];
 
 
-$b_descrip  = buscarProgramaEstudio($conexion, $descrip );
+$b_descrip  = buscarModuloProfesional($conexion, $descrip );
 $c_r_b_descrip  = mysqli_num_rows($b_descrip );
 if ($c_r_b_programa_estudios == 0) {
-	$insertar = "INSERT INTO programa_estudios (descripcion, nro_modulo, id_programa_estudio) VALUES ('$descrip','$nro_modulo','$id_programa_estudio')";
+	$insertar = "INSERT INTO modulo_profesional (descripcion, nro_modulo, id_programa_estudio) VALUES ('$descrip','$nro_modulo','$id_programa_estudio')";
+
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 	
 
