@@ -10,8 +10,7 @@ if ($c_r_b_id_programa_estudios == 0) {
 	$insertar = "INSERT INTO presente_periodo_acad (id_periodo_acad) VALUES ('$presntepa')";
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 
-    $b_id_presntepa = buscarPresentePeriodoAcademico($conexion, $presntepa);
-	$res_b_presntepa = mysqli_fetch_array( $b_id_presntepa);
+    
 
 
 
