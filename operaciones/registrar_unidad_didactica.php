@@ -11,7 +11,7 @@ $horas = $_POST['horas'];
 $tipo = $_POST['tipo'];
 $orden = $_POST['orden'];
 
-$b_descrip  = buscarPresentePeriodoAcademico($conexion, $descrip );
+$b_descrip  = buscarUnidadDidactica($conexion, $descrip );
 $c_r_b_descrip  = mysqli_num_rows($b_descrip );
 if ($c_r_b_id_programa_estudios == 0) {
 	$insertar = "INSERT INTO unidad_didactica (escrip, id_programa_estudio, id_modulo_profesional, id_semestre, creditos, horas, tipo, orden) VALUES ('$descrip ','$id_programa_estudio','$id_modulo', '$id_semestre', '$creditos', '$horas', '$tipo', '$orden')";
