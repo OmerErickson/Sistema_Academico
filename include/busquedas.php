@@ -70,6 +70,14 @@ function buscarDatoInstitucion($conexion){
     $sql = "SELECT * FROM datos_institucionales";
     return mysqli_query($conexion, $sql);
 }
+function buscarPeriodoAcademico($conexion){
+    $sql = "SELECT * FROM periodo_academico";
+    return mysqli_query($conexion, $sql);
+}
+function buscarPeriodoAcademicoByNombre($conexion, $nombre){
+    $sql = "SELECT * FROM periodo_academico WHERE nombre=$nombre";
+    return mysqli_query($conexion, $sql);
+}
 
 
 

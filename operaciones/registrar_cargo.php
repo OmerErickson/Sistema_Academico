@@ -19,7 +19,7 @@ if ($c_r_b_cargo == 0) {
 	if ($insertar ) {
 		echo "<script>
                 alert('Registro de Cargo Exitoso');
-                window.location= '../cargo.php'
+                window.location= '../cargos.php'
     			</script>";
 	}else{
 		echo "<script>

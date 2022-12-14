@@ -21,7 +21,7 @@ if ($c_r_b_unidad_didactica == 0) {
 	if ($ejecutar_insetar) {
 		echo "<script>
                 alert('Registro Exitoso programa de estudios');
-                window.location= '../unidad_didactica.php'
+                window.location= '../unidad_didacticas.php'
     			</script>";
 	}else{
 		echo "<script>

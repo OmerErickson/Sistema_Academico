@@ -19,7 +19,7 @@ if ($c_r_b_id_periodo_acad == 0) {
 	if ($insertar ) {
 		echo "<script>
                 alert('Registro de periodo academico Exitoso');
-                window.location= '../presente_periodo_academico.php'
+                window.location= '../presente_periodo_academicos.php'
     			</script>";
 	}else{
 		echo "<script>

@@ -40,7 +40,7 @@ if ($c_r_b_estudiante == 0) {//validamos que no haya registros en la base de dat
   if ($ejec_insert_usu) {
     echo "<script>
                 alert('Registro Exitoso');
-                window.location= '../estudiante.php'
+                window.location= '../estudiantes.php'
           </script>";
   }else{
     echo "<script>

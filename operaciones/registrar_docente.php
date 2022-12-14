@@ -34,7 +34,7 @@ if ($c_r_b_docente == 0) {//validamos que no haya registros en la base de datos
   if ($ejec_insert_usu) {
     echo "<script>
                 alert('Registro Exitoso');
-                window.location= '../docente.php'
+                window.location= '../docentes.php'
           </script>";
   }else{
     echo "<script>

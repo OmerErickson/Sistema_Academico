@@ -30,7 +30,7 @@ if ($c_r_b_dato_institucional == 0) {//validamos que no haya registros en la bas
   if ($ejecutar_insetar) {
     echo "<script>
                 alert('Registro Exitoso');
-                window.location= '../dato_institucional.php'
+                window.location= '../dato_institucionales.php'
           </script>";
   }else{
     echo "<script>
