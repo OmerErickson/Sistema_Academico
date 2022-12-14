@@ -10,7 +10,7 @@ if ($c_r_b_id_periodo_acad == 0) {
 	$insertar = "INSERT INTO presente_periodo_acad (id_periodo_acad) VALUES ('$id_periodo_acad')";
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 
-    $b_id_periodo_acad = buscarCargo($conexion, $id_periodo_acad);
+    $b_id_periodo_acad = buscarPresentePeriodoAcademico($conexion, $id_periodo_acad);
 	$res_b_id_periodo_acad = mysqli_fetch_array( $b_id_periodo_acad);
 
 

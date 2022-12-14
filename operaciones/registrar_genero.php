@@ -20,7 +20,7 @@ if ($c_r_b_programa_estudios == 0) {
 	if ($insertar) {
 		echo "<script>
                 alert('Registro de Genero Exitoso');
-                window.location= '../genero.php'
+                window.location= '../generos.php'
     			</script>";
 	}else{
 		echo "<script>
