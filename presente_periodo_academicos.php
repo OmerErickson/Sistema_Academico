@@ -67,8 +67,8 @@ include "include/verificar_sesion.php";
                         while ($res_b_presente_periodo_academico = mysqli_fetch_array($b_presente_periodo_academico)) {
                         ?>
                         <tr>
-                          <td><?php echo $res_b_genero['id']; ?></td>
-                          <td><?php echo $res_b_genero['id_periodo_acad']; ?></td>
+                          <td><?php echo $res_b_presente_periodo_academico['id']; ?></td>
+                          <td><?php echo $res_b_presente_periodo_academico['id_periodo_acad']; ?></td>
                          
                           <td>
                             <a href="editar_genero.php?id=<?php echo $res_b_genero['id']; ?>" class="btn btn-primary">Editar</a>
