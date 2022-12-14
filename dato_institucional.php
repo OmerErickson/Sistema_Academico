@@ -40,7 +40,7 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                  <h2><center>Datos Institucionales</center></h2>
+                  <center><h2>Datos Institucionales</h2></center>
                     
                     <div class="clearfix"></div>
                   </div>
