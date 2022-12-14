@@ -56,11 +56,8 @@ include "include/busquedas.php";
                       <thead>
                         <tr>
                           <th>Id</th>
-                          <th>DNI</th>
-                          <th>APELLIDOS Y NOMBRES</th>
-                          <th>FECHA DE NACIMIENTO</th>
-                          <th>CORREO</th>
-                          <th>TELEFONO</th>
+                          <th>usuario</th>
+                          <th>password</th>
                           <th>Acciones</th>
                         </tr>
                       </thead>
@@ -71,11 +68,9 @@ include "include/busquedas.php";
                         ?>
                         <tr>
                           <td><?php echo $res_b_docentes['id']; ?></td>
-                          <td><?php echo $res_b_docentes['dni']; ?></td>
-                          <td><?php echo $res_b_docentes['apellidos_nombres'];  ?></td>
-                          <td><?php echo $res_b_docentes['fecha_nac']; ?></td>
-                          <td><?php echo $res_b_docentes['correo']; ?></td>
-                          <td><?php echo $res_b_docentes['telefono']; ?></td>
+                          <td><?php echo $res_b_docentes['usuario']; ?></td>
+                          <td><?php echo $res_b_docentes['password'];  ?></td>
+                          
                           <td>
                             <a href="editar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-primary">Editar</a>
                             <a href="operaciones/eliminar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-danger">Eliminar</a>
