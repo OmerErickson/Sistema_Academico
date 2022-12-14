@@ -13,8 +13,6 @@ if ($c_r_b_programa_estudios == 0) {
 	$insertar = "INSERT INTO programa_estudios (codigo, tipo, nombre, resolucion) VALUES ('$codigo','$tipo','$nombre', '$resolucion')";
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 	
-	$b_programa_estudios = buscarProgramaEstudio($conexion, $programa_estudios);
-	$res_b_programa_estudios = mysqli_fetch_array( $b_programa_estudios);
 
 
 	if ($ejecutar_insetar) {
