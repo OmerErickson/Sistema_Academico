@@ -23,7 +23,7 @@ if ($c_r_b_id_programa_estudios == 0) {
 
 
 	
-	if ($insertar ) {
+	if ($ejecutar_insetar ) {
 		echo "<script>
                 alert('Registro Exitoso de Unidad Didactica');
                 window.location= '../unidad_didacticas.php'
