@@ -109,7 +109,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Telefono :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="number" class="form-control" name="telefono" id="telefono" required="" value="99999999" >
+                        <input type="number" class="form-control" name="telefono" id="telefono" required="" value="935787292" >
                         </div>
                       </div>
 
@@ -194,6 +194,42 @@ include "include/verificar_sesion.php";
     <script src="Gentella/vendors/moment/min/moment.min.js"></script>
     <script src="Gentella/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
     <!-- Custom Theme Scripts -->
-    <script src="Gentella/build/js/custom.min.js"></script>
+    <script src="../../Gentella/build/js/custom.min.js"></script>
+    <script type="text/javascript">
+        function desactivar_controles(){
+            document.getElementById('cod_modular').disabled = true
+            document.getElementById('ruc').disabled = true
+            document.getElementById('nombre').disabled = true
+            document.getElementById('dep').disabled = true
+            document.getElementById('provincia').disabled = true
+            document.getElementById('distrito').disabled = true
+            document.getElementById('direccion').disabled = true
+            document.getElementById('telefono').disabled = true
+            document.getElementById('email').disabled = true
+            document.getElementById('resolucion').disabled = true
+            document.getElementById('btn_cancelar').style.display = 'none'
+            document.getElementById('btn_guardar').style.display = 'none'
+            document.getElementById('btn_editar').style.display = ''
+        };
+        function activar_controles(){
+            document.getElementById('cod_modular').disabled = false
+            document.getElementById('ruc').disabled = false
+            document.getElementById('nombre').disabled = false
+            document.getElementById('dep').disabled = false
+            document.getElementById('provincia').disabled = false
+            document.getElementById('distrito').disabled = false
+            document.getElementById('direccion').disabled = false
+            document.getElementById('telefono').disabled = false
+            document.getElementById('email').disabled = false
+            document.getElementById('resolucion').disabled = false
+            document.getElementById('btn_cancelar').removeAttribute('style')
+            document.getElementById('btn_guardar').removeAttribute('style')
+            document.getElementById('btn_editar').style.display = 'none'
+        };
+        function cancelar(){
+            document.getElementById('myform').reset();
+        }
+    </script>
+
   </body>
 </html>
