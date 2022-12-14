@@ -11,9 +11,10 @@ $b_descripcion  = buscarModuloProfesional($conexion, $descripcion );
 $c_r_b_descripcion  = mysqli_num_rows($b_descripcion );
 if ($c_r_b_programa_estudios == 0) {
 	$insertar = "INSERT INTO programa_estudios (descripcion, nro_modulo, id_programa_estudio) VALUES ('$descripcion','$nro_modulo','$id_programa_estudio')";
+
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 	
-	if ($ejecutar_insetar) {
+	if ($insetar) {
 		echo "<script>
                 alert('Registro Exitoso programa de estudios');
                 window.location= '../modulo_profesional.php'
