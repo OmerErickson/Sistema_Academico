@@ -55,6 +55,7 @@ include "include/busquedas.php";
                     <table id="example" class="table table-striped table-bordered">
                       <thead>
                         <tr>
+                        <th>id</th>
                           <th>id_docente</th>
                           <th>usuario</th>
                           <th>password</th>
@@ -67,6 +68,7 @@ include "include/busquedas.php";
                         while ($res_b_docentes = mysqli_fetch_array($b_docentes)) {
                         ?>
                         <tr>
+                        <td><?php echo $res_b_docentes['id']; ?></td>
                           <td><?php echo $res_b_docentes['id_docente']; ?></td>
                           <td><?php echo $res_b_docentes['usuario']; ?></td>
                           <td><?php echo $res_b_docentes['password'];  ?></td>
