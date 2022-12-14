@@ -42,7 +42,7 @@ include "include/busquedas.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Relacion de Proma de Estudios</h2>
+                    <h2>Relacion de Programa de Estudios</h2>
                     <ul class="nav navbar-right">
                       <li>
                         <a href="programa_estudio.php" class="btn btn-success">Agregar Nuevo</a>
