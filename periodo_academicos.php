@@ -74,7 +74,7 @@ include "include/busquedas.php";
                           <td><?php echo $res_b_periodo_academico['nombre']; ?></td>
                           <td><?php echo $res_b_periodo_academico['fecha_inicio'];  ?></td>
                           <td><?php echo $res_b_periodo_academico['fecha_fin']; ?></td>
-                          td><?php echo $res_b_periodo_academico['director']; ?></td>
+                          <td><?php echo $res_b_periodo_academico['director']; ?></td>
                           <td><?php echo $res_b_periodo_academico['fecha_actas']; ?></td>
                           
                           <td>
