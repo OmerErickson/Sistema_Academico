@@ -69,7 +69,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Nombre del Institucion :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="nombre" id="nombre" required="" value="INSTITUTO DE EDUCACION SUPERIOR TECNOLOGICO PUBLICO HUANTA"  style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                        <input type="text" class="form-control" name="nombre_institucion" id="nombre_institucion" required="" value="INSTITUTO DE EDUCACION SUPERIOR TECNOLOGICO PUBLICO HUANTA"  style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
                         </div>
                       </div>
 
@@ -77,7 +77,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Departamento :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="dep" id="dep" required="" value="AYACUCHO"  style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                        <input type="text" class="form-control" name="departamento" id="departamento" required="" value="AYACUCHO"  style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
                         </div>
                       </div>
 
@@ -117,7 +117,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Correo :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="email" id="email" required="" value="iestphuanta@iestphuanta.edu.pe">
+                        <input type="text" class="form-control" name="correo" id="correo" required="" value="iestphuanta@iestphuanta.edu.pe">
                         </div>
                       </div>
 
@@ -126,7 +126,7 @@ include "include/verificar_sesion.php";
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Numero de Resolucion :
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" class="form-control" name="resolucion" id="resolucion" required="" value="RD. 095-86" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                        <input type="text" class="form-control" name="nro_resolucion" id="nro_resolucion" required="" value="RD. 095-86" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
                         </div>
                       </div>
                       
