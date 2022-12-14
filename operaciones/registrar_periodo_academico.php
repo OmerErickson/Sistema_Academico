@@ -11,7 +11,7 @@ $fecha_actas= $_POST['fecha_actas'];
 $b_nombre = buscarPeriodoAcademicoByNombre($conexion, $nombre);
 $c_r_b_nombre= mysqli_num_rows($b_nombre);
 
-echo "hola";
+echo "holaaaa";
 
 if ($c_r_b_nombre == 0) {
 	
