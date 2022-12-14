@@ -45,7 +45,7 @@ include "include/busquedas.php";
                     <h2>Relacion de Proma de Estudios</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="programa_estudio.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="periodo_academico.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
