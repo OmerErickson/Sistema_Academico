@@ -11,21 +11,22 @@ $horas = $_POST['horas'];
 $tipo = $_POST['tipo'];
 $orden = $_POST['orden'];
 
-$b_unidad_didactica = buscarUnidadDidactica($conexion, $descripcion);
-$c_r_b_unidad_didactica = mysqli_num_rows($b_unidad_didactica);
-if ($c_r_b_unidad_didactica == 0) {
+$b_descripcion  = buscarUnidadDidactica($conexion, $descripcion);
+$c_r_b_descripcion  = mysqli_num_rows($b_descripcion );
+if ($c_r_b_programa_estudios == 0) {
 
 	$insertar = "INSERT INTO programa_estudios (descripcion, id_programa_estudio, id_modulo, id_semestre, creditos, horas, tipo, orden) VALUES ('$descripcion','$id_programa_estudio','$id_modulo', '$id_semestre', '$creditos', '$horas', '$tipo', '$orden')";
+
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 	
 	if ($ejecutar_insetar) {
 		echo "<script>
-                alert('Registro Exitoso programa de estudios');
+                alert('Registro Exitoso de Unidad Didactica');
                 window.location= '../unidad_didacticas.php'
     			</script>";
 	}else{
 		echo "<script>
-			alert('Error al programa de estudios');
+			alert('Error al registrar la Unidad Didactica');
 			window.history.back();
 			</script>
 			";
