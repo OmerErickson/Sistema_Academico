@@ -22,7 +22,7 @@ if ($c_r_b_programa_estudios == 0) {
     			</script>";
 	}else{
 		echo "<script>
-			alert('Error al programa de estudios');
+			alert('Error al Registro de programa de estudios');
 			window.history.back();
 			</script>
 			";

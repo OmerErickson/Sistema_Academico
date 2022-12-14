@@ -18,12 +18,12 @@ if ($c_r_b_programa_estudios == 0) {
 
 	if ($ejecutar_insetar) {
 		echo "<script>
-                alert('Registro Exitoso programa de estudios');
+                alert('Registro Exitoso de Modulo Profesional');
                 window.location= '../modulo_profesional.php'
     			</script>";
 	}else{
 		echo "<script>
-			alert('Error al programa de estudios');
+			alert('Error al registrar el Modulo Profesional');
 			window.history.back();
 			</script>
 			";
