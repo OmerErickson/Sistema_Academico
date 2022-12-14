@@ -12,17 +12,16 @@ $fecha_actas= $_POST['fecha_actas'];
 
 $b_nombre = buscarPeriodoAcademicoByNombre($conexion, $nombre );
 $c_r_b_nombre = mysqli_num_rows($b_nombre);
-if ($c_r_b_nombre == 0) {
+if ($c_r_b_programa_estudios == 0) {
 	$insertar = "INSERT INTO periodo_academico (nombre, fecha_inicio, fecha_fin, director, fecha_actas) VALUES ('$nombre', '$fecha_inicio', '$fecha_fin', '$director', '$fecha_actas')";
 	$ejecutar_insetar = mysqli_query($conexion, $insertar);
 
-    $b_id_nombre = buscarPeriodoAcademico($conexion, $nombre);
-	$res_b_nombre = mysqli_fetch_array( $b_id_nombre);
+    
 
 
 
 	
-	if ($insertar) {
+	if ($ejecutar_insetar) {
 		echo "<script>
                 alert('Registro de periodo academico Exitoso');
                 window.location= '../periodo_academicos.php'
