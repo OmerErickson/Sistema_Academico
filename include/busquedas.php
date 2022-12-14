@@ -39,7 +39,7 @@ function buscarDocenteByDni($conexion, $dni){
     return mysqli_query($conexion, $sql);
 }
 function buscarDocenteById($conexion, $id){
-    $sql = "SELECT * FROM docente WHERE id=$id";
+    $sql = "SELECT * FROM docente WHERE id='$id'";
     return mysqli_query($conexion, $sql);
 }
 function buscarDocentes($conexion){
@@ -47,7 +47,7 @@ function buscarDocentes($conexion){
     return mysqli_query($conexion, $sql);
 }
 function buscarUsuarioDocenteById($conexion){
-    $sql = "SELECT * FROM usuarios_docentes WHERE id=$id";
+    $sql = "SELECT * FROM usuarios_docentes WHERE id='$id'";
     return mysqli_query($conexion, $sql);
 }
 function buscarDatos_institucionales($conexion){
